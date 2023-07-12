@@ -1,10 +1,18 @@
 // 12.8.3. Bonus Missions
 
 // Code your crewMass function here:
-
+function crewMass(arr) {
+  let mass = 0
+  for (i = 0; i < arr.length; i++) {
+    mass += arr[i].mass;
+  }
+  return mass;
+}
 
 // Code your fuelRequired function here:
-
+function fuelRequired(crewArray) {
+  let massOfCrew = crewMass
+}
 
 // The pre-selected crew is in the array at the end of this file.
 // Feel free to add, remove, or switch crew members as you see fit.
