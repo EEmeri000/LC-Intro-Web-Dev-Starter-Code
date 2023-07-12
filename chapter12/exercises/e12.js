@@ -53,10 +53,10 @@ let crew = [superChimpOne, superChimpTwo, salamander, beagle, tardigrade];
 console.log(crew)
 
 function crewReports(crewMember) {
-    console.log(`'${crewMember.name} is a ${crewMember.species}. They are ${crewMember.age} years old and ${crewMember.mass} kilograms. Their ID is ${crewMember.astronautID}.'`)
+    return `'${crewMember.name} is a ${crewMember.species}. They are ${crewMember.age} years old and ${crewMember.mass} kilograms. Their ID is ${crewMember.astronautID}.'`
  
 }
-console.log(crewReports(salamander))
+crewReports(salamander)
 // Start an animal race!
 
 
