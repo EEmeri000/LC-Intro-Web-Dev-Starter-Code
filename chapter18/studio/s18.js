@@ -6,16 +6,23 @@ class CrewCandidate {
         this.scores = scores;
     }
     addScore(newScore) {
-        
+        this.scores.push(newScore)
     }
+    average() { 
+        for (let i = 0; i < this.scores.length; i++) {
+
+        }
+    }
+    
 }
 
 let candidate1 = new CrewCandidate("Bubba Bear", "135kg", [88, 85, 90])
 let candidate2 = new CrewCandidate("Merry Maltese", "1.5kg", [93, 88, 97])
 let candidate3 = new CrewCandidate("Glad Gator", "225kg", [75, 78, 62])
 
+candidate1.addScore(83)
 
-console.log(candidate3)
+console.log(candidate1.scores)
 //Add methods for adding scores, averaging scores and determining candidate status as described in the studio activity.
 
 
