@@ -1,0 +1,5 @@
+candidate3.addScore(100)
+candidate3.addScore(100)
+candidate3.addScore(100)
+candidate3.addScore(100)
+candidate3.addScore(100)
