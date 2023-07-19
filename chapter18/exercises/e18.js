@@ -17,7 +17,7 @@ class Book {
  
  class Manual extends Book {
     constructor(title, author, copyright, isbn, pages, timesCheckedOut, discarded){
-       super(title, author, copyright, isbn, pages, timesCheckedOut, discarded);
+       super();
     }
  
     dispose(currentYear){
@@ -29,7 +29,7 @@ class Book {
  
  class Novel extends Book {
     constructor(title, author, copyright, isbn, pages, timesCheckedOut, discarded){
-       super(title, author, copyright, isbn, pages, timesCheckedOut, discarded);
+       super();
     }
  
     dispose(){
