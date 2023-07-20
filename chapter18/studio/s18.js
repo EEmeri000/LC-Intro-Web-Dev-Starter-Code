@@ -16,21 +16,31 @@ class CrewCandidate {
         // let average = Math.round(scoreSum / this.scores.length) / 10
         return Math.round(scoreSum / this.scores.length * 10) / 10
     }
-    status(score) {
-        let acceptance = '';
-        if (score >= 90) {
-            acceptance = 'Accepted';
-        } else if (score >= 80) {
-            acceptance = 'Reserve';
-        } else if (score >= 70) {
-            acceptance = 'Probationary';
-        } else {
-            acceptance = 'Rejected';
-        }
-        return `${this.name} has earned an average test score of ${score} and has a status of ${acceptance}`;
+    status() {
+    //     let acceptance = '';
+    //     if (score >= 90) {
+    //         acceptance = 'Accepted';
+    //     } else if (score >= 80) {
+    //         acceptance = 'Reserve';
+    //     } else if (score >= 70) {
+    //         acceptance = 'Probationary';
+    //     } else {
+    //         acceptance = 'Rejected';
+    //     }
+    //     return `${this.name} has earned an average test score of ${score} and has a status of ${acceptance}`;
+    // }
+    let x = this.average()
+    if(x >= 90) {
+    console.log(`${this.name} earned an average score of ${x} and has been Accepted`)
+    } else if (x >= 80) {
+    console.log(`${this.name} earned an average score of ${x} and has been put on Reserved Status`)
+    } else if (x >= 70) {
+    console.log(`${this.name} earned an average score of ${x} and has been put in Probationary Status`)
+    } else {
+    console.log(`${this.name} earned an average score of ${x} and has been Rejected`) 
     }
-    
-}
+    }
+}   
 
 let candidate1 = new CrewCandidate("Bubba Bear", "135kg", [88, 85, 90])
 let candidate2 = new CrewCandidate("Merry Maltese", "1.5kg", [93, 88, 97])
@@ -52,4 +62,5 @@ candidate3.addScore(100)
 candidate3.addScore(100)
 //six perfect scores to get the Alligator accepted
 console.log(candidate1.scores)
-console.log(candidate3.status(candidate3.average()))
+candidate1.status()
+
